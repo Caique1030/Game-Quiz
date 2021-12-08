@@ -1,0 +1,177 @@
+html {
+  background-color: #0084d1;
+  padding: 50px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.red-border {
+  border: 1px solid red;
+}
+
+.green-border {
+  border: 1px solid green;
+}
+
+@media ( prefers-reduced-motion : no-preference ) {
+
+  .App-logo {
+    animation: shake infinite 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+}
+
+.App-header {
+  align-items: center;
+  background-color: #282c34;
+  color: #282c34;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes shake {
+
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.game-page {
+  box-shadow: 1px 1px 10px black;
+  border-radius: 20px;
+  margin: 50px;
+  padding: auto;
+  align-items: center;
+  background-color: #fcd100;
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.game-header {
+  box-shadow: inset 1px 1px 10px black;
+  border-radius: 100%;
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-header img {
+  box-shadow: 1px 1px 10px black;
+  border-radius: 100%;
+}
+
+.game-page-questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-page-questions p, seconds, label {
+  box-shadow: 1px 1px 10px black;
+  color: #363636;
+  margin: 10px 20%;
+  padding: 5px;
+  background:rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+.game-page-questions button {
+    width: 100%;
+    box-shadow: 1px 1px 10px black;
+    color: #363636;
+    margin: 3px 0;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+.game-page-questions button:hover {
+  background-color: rgba(255, 208, 0, 0.397);
+}
+
+.game-page-buttons {
+    border-radius: 10px;
+    padding: 15px;
+    width: 80%;
+    box-shadow: inset 1px 1px 20px 20px #090909;
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    margin: 10px;
+}
+
+.game-page-next {
+  height: 100px
+}
+
+#question-text {
+  height: 600px;
+}
+#gravatar-email {
+  font-size: 20px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 8px;
+}
+
+.game-page-questions label {
+  padding: 10px;
+}
+
+.hero-body {
+  background-color: #fcd100;
+  margin: 20px;
+  box-shadow: inset 1px 1px 14px black;
+  border-radius: 20px;
+}
+
+.hero {
+  background-color:#0071d1;
+  border-radius: 20px;
+  box-shadow: 1px 1px 14px black;
+  padding: 20px;
+}
+
+.box {
+  box-shadow: 1px 1px 14px grey;
+  border-radius: 20px;
+}
+
+.label {
+  box-shadow: 1px 1px 14px grey;
+  margin-bottom: 10px;
+}
