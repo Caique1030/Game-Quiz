@@ -8,7 +8,7 @@ class Feedback extends React.Component {
   assertionsVerify(assert) {
     const minAssert = 3;
     if (assert < minAssert) {
-      return <h3><strong>Podia ser melhor...</strong></h3>;
+      return <h3><strong>Podia ser melhor...!</strong></h3>;
     }
     return <h3><strong>Mandou bem !</strong></h3>;
   }
@@ -33,7 +33,9 @@ class Feedback extends React.Component {
             <p data-testid="feedback-text">{this.assertionsVerify(assertions)}</p>
           </header>
           <section>
-            <p className="subtitle is-3 my-2" data-testid="feedback-total-question">{`Acertos: ${assertions}`}</p>
+            <p className="subtitle is-3 my-2" data-testid="feedback-total-question">
+              {`Acertos: ${assertions}`}
+            </p>
           </section>
           <Link className="button is-link" to="/" data-testid="btn-play-again">
             Jogar novamente
