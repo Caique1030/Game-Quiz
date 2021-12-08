@@ -17,6 +17,7 @@
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.3.0"
   },
+  "homepage": "https://rafaelromanoz.github.io/trivia-react-redux",
   "scripts": {
     "cy": "cypress run",
     "cy:open": "cypress open",
@@ -27,7 +28,9 @@
     "eject": "react-scripts eject",
     "test-coverage": "react-scripts test --coverage --watchAll=false",
     "lint:styles": "npx stylelint '**/*.css'",
-    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx"
+    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,8 +50,6 @@
   "devDependencies": {
     "@sheerun/mutationobserver-shim": "0.3.3",
     "@testing-library/react": "^9.5.0",
-    "cypress": "^3.8.3",
-    "cypress-multi-reporters": "^1.4.0",
     "eslint": "6.8.0",
     "eslint-config-airbnb": "18.2.0",
     "eslint-plugin-import": "2.22.1",
@@ -57,11 +58,8 @@
     "eslint-plugin-react-hooks": "4.2.0",
     "eslint-plugin-react-redux": "3.3.0",
     "eslint-plugin-sonarjs": "0.5.0",
+    "gh-pages": "^3.2.3",
     "jest-localstorage-mock": "2.4.3",
-    "mocha": "^7.2.0",
-    "mochawesome": "^6.1.1",
-    "mochawesome-merge": "^4.0.3",
-    "mochawesome-report-generator": "^5.1.0",
     "stylelint": "^13.8.0",
     "stylelint-config-standard": "20.0.0",
     "stylelint-order": "^4.1.0"
